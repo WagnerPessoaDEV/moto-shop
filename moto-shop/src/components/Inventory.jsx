@@ -7,6 +7,52 @@ import xmax2024Image2 from '../assets/estoque/xmax-2024 (2).jpg';
 import xmax2024Image3 from '../assets/estoque/xmax-2024 (3).jpg';
 import xmax2024Image4 from '../assets/estoque/xmax-2024 (4).jpg';
 import xmax2024Image5 from '../assets/estoque/xmax-2024 (5).jpg';
+import cb500fImage1 from '../assets/estoque/Novas/CB500F/CB500F (1).png';
+import cb500fImage2 from '../assets/estoque/Novas/CB500F/CB500F (2).png';
+import cb500fImage3 from '../assets/estoque/Novas/CB500F/CB500F (3).png';
+import cb500fImage4 from '../assets/estoque/Novas/CB500F/CB500F (4).png';
+import cb500fImage5 from '../assets/estoque/Novas/CB500F/CB500F (5).png';
+import mt03Image1 from '../assets/estoque/Novas/MT03/MT03 (1).png';
+import mt03Image2 from '../assets/estoque/Novas/MT03/MT03 (2).png';
+import mt03Image3 from '../assets/estoque/Novas/MT03/MT03 (3).png';
+import mt03Image4 from '../assets/estoque/Novas/MT03/MT03 (4).png';
+import mt03Image5 from '../assets/estoque/Novas/MT03/MT03 (5).png';
+import r15Image1 from '../assets/estoque/Novas/YamahaR15/Yamaha R15 (1).png';
+import r15Image2 from '../assets/estoque/Novas/YamahaR15/Yamaha R15 (2).png';
+import r15Image3 from '../assets/estoque/Novas/YamahaR15/Yamaha R15 (3).png';
+import r15Image4 from '../assets/estoque/Novas/YamahaR15/Yamaha R15 (4).png';
+import r15Image5 from '../assets/estoque/Novas/YamahaR15/Yamaha R15 (5).png';
+import cb500xImage1 from '../assets/estoque/Usadas/CB 500x/CB 500x (1).png';
+import cb500xImage2 from '../assets/estoque/Usadas/CB 500x/CB 500x (2).png';
+import cb500xImage3 from '../assets/estoque/Usadas/CB 500x/CB 500x (3).png';
+import cb500xImage4 from '../assets/estoque/Usadas/CB 500x/CB 500x (4).png';
+import cb500xImage5 from '../assets/estoque/Usadas/CB 500x/CB 500x (5).png';
+import iron883Image1 from '../assets/estoque/Usadas/Harley Davidson Iron 883/Harley Davidson Iron 883 (1).jpg';
+import iron883Image2 from '../assets/estoque/Usadas/Harley Davidson Iron 883/Harley Davidson Iron 883 (2).jpg';
+import iron883Image3 from '../assets/estoque/Usadas/Harley Davidson Iron 883/Harley Davidson Iron 883 (3).jpg';
+import iron883Image4 from '../assets/estoque/Usadas/Harley Davidson Iron 883/Harley Davidson Iron 883 (4).jpg';
+import iron883Image5 from '../assets/estoque/Usadas/Harley Davidson Iron 883/Harley Davidson Iron 883 (5).jpg';
+import iron883Image6 from '../assets/estoque/Usadas/Harley Davidson Iron 883/Harley Davidson Iron 883 (6).jpg';
+import fz25Image1 from '../assets/estoque/Usadas/Fz25/2026-07-16_18h34_04.png';
+import fz25Image2 from '../assets/estoque/Usadas/Fz25/2026-07-16_18h34_10.png';
+import fz25Image3 from '../assets/estoque/Usadas/Fz25/2026-07-16_18h34_15.png';
+import fz25Image4 from '../assets/estoque/Usadas/Fz25/2026-07-16_18h34_20.png';
+import fz25Image5 from '../assets/estoque/Usadas/Fz25/2026-07-16_18h34_29.png';
+import versysImage1 from '../assets/estoque/Usadas/Kawasaki Versys 650/2026-07-16_18h35_32.png';
+import versysImage2 from '../assets/estoque/Usadas/Kawasaki Versys 650/2026-07-16_18h35_39.png';
+import versysImage3 from '../assets/estoque/Usadas/Kawasaki Versys 650/2026-07-16_18h35_43.png';
+import versysImage4 from '../assets/estoque/Usadas/Kawasaki Versys 650/2026-07-16_18h35_51.png';
+import versysImage5 from '../assets/estoque/Usadas/Kawasaki Versys 650/2026-07-16_18h36_00.png';
+import xreImage1 from '../assets/estoque/Usadas/XRE 300/XRE 300 (1).png';
+import xreImage2 from '../assets/estoque/Usadas/XRE 300/XRE 300 (2).png';
+import xreImage3 from '../assets/estoque/Usadas/XRE 300/XRE 300 (3).png';
+import xreImage4 from '../assets/estoque/Usadas/XRE 300/XRE 300 (4).png';
+import xreImage5 from '../assets/estoque/Usadas/XRE 300/XRE 300 (5).png';
+import bmwF750Image1 from '../assets/estoque/Usadas/BMW F 750 GS/2026-07-16_18h42_46.png';
+import bmwF750Image2 from '../assets/estoque/Usadas/BMW F 750 GS/2026-07-16_18h42_50.png';
+import bmwF750Image3 from '../assets/estoque/Usadas/BMW F 750 GS/2026-07-16_18h42_54.png';
+import bmwF750Image4 from '../assets/estoque/Usadas/BMW F 750 GS/2026-07-16_18h42_58.png';
+import bmwF750Image5 from '../assets/estoque/Usadas/BMW F 750 GS/2026-07-16_18h43_01.png';
 
 const buildGallery = (seed) => [
   `https://source.unsplash.com/1200x800/?motorcycle,${seed}-1`,
@@ -25,6 +71,70 @@ const xmaxGallery = [
   xmax2024Image4,
   xmax2024Image5,
 ];
+const cb500fGallery = [
+  cb500fImage1,
+  cb500fImage2,
+  cb500fImage3,
+  cb500fImage4,
+  cb500fImage5,
+];
+const mt03Gallery = [
+  mt03Image1,
+  mt03Image2,
+  mt03Image3,
+  mt03Image4,
+  mt03Image5,
+];
+const r15Gallery = [
+  r15Image1,
+  r15Image2,
+  r15Image3,
+  r15Image4,
+  r15Image5,
+];
+const cb500xGallery = [
+  cb500xImage1,
+  cb500xImage2,
+  cb500xImage3,
+  cb500xImage4,
+  cb500xImage5,
+];
+const iron883Gallery = [
+  iron883Image1,
+  iron883Image2,
+  iron883Image3,
+  iron883Image4,
+  iron883Image5,
+  iron883Image6,
+];
+const fz25Gallery = [
+  fz25Image1,
+  fz25Image2,
+  fz25Image3,
+  fz25Image4,
+  fz25Image5,
+];
+const versysGallery = [
+  versysImage1,
+  versysImage2,
+  versysImage3,
+  versysImage4,
+  versysImage5,
+];
+const xreGallery = [
+  xreImage1,
+  xreImage2,
+  xreImage3,
+  xreImage4,
+  xreImage5,
+];
+const bmwF750Gallery = [
+  bmwF750Image1,
+  bmwF750Image2,
+  bmwF750Image3,
+  bmwF750Image4,
+  bmwF750Image5,
+];
 //motos novas
 const newBikes = [
   {
@@ -34,8 +144,8 @@ const newBikes = [
     price: 'R$ 35.900',
     km: '0 km',
     status: 'new',
-    image: 'https://images.unsplash.com/photo-1558981285-6f0c94958bb6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('cb-500f'),
+    image: cb500fImage1,
+    gallery: cb500fGallery,
   },
   {
     id: 2,
@@ -54,8 +164,8 @@ const newBikes = [
     price: 'R$ 34.900',
     km: '0 km',
     status: 'new',
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('mt-03'),
+    image: mt03Image1,
+    gallery: mt03Gallery,
   },
   {
     id: 4,
@@ -64,8 +174,8 @@ const newBikes = [
     price: 'R$ 22.900',
     km: '0 km',
     status: 'new',
-    image: 'https://images.unsplash.com/photo-1527719327859-2e7b212d21b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('r15'),
+    image: r15Image1,
+    gallery: r15Gallery,
   },
   {
     id: 5,
@@ -147,8 +257,8 @@ const usedBikes = [
     price: 'R$ 55.000',
     km: '12.000 km',
     status: 'used',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('iron-883'),
+    image: iron883Image1,
+    gallery: iron883Gallery,
   },
   {
     id: 3,
@@ -157,8 +267,8 @@ const usedBikes = [
     price: 'R$ 34.500',
     km: '18.000 km',
     status: 'used',
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('cb-500x'),
+    image: cb500xImage1,
+    gallery: cb500xGallery,
   },
   {
     id: 4,
@@ -167,8 +277,8 @@ const usedBikes = [
     price: 'R$ 17.900',
     km: '24.000 km',
     status: 'used',
-    image: 'https://images.unsplash.com/photo-1527719327859-2e7b212d21b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('fazer-250'),
+    image: fz25Image1,
+    gallery: fz25Gallery,
   },
   {
     id: 5,
@@ -177,8 +287,8 @@ const usedBikes = [
     price: 'R$ 36.900',
     km: '31.000 km',
     status: 'used',
-    image: 'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('versys-650'),
+    image: versysImage1,
+    gallery: versysGallery,
   },
   {
     id: 6,
@@ -187,8 +297,8 @@ const usedBikes = [
     price: 'R$ 21.500',
     km: '22.000 km',
     status: 'used',
-    image: 'https://images.unsplash.com/photo-1472417583565-62e7bdeda490?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('xre-300'),
+    image: xreImage1,
+    gallery: xreGallery,
   },
   {
     id: 7,
@@ -197,8 +307,8 @@ const usedBikes = [
     price: 'R$ 52.900',
     km: '27.000 km',
     status: 'used',
-    image: 'https://images.unsplash.com/photo-1505843513577-22bb7d21e455?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('f-750-gs'),
+    image: bmwF750Image1,
+    gallery: bmwF750Gallery,
   },
   {
     id: 8,
@@ -209,26 +319,6 @@ const usedBikes = [
     status: 'used',
     image: 'https://images.unsplash.com/photo-1517673132405-a56a62b18caf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     gallery: buildGallery('bonneville-t100'),
-  },
-  {
-    id: 9,
-    name: 'Royal Enfield Meteor 350',
-    year: 2021,
-    price: 'R$ 19.900',
-    km: '9.000 km',
-    status: 'used',
-    image: 'https://images.unsplash.com/photo-1508973378896-7c9de50d8f4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('meteor-350'),
-  },
-  {
-    id: 10,
-    name: 'Suzuki V-Strom 650',
-    year: 2018,
-    price: 'R$ 37.900',
-    km: '40.000 km',
-    status: 'used',
-    image: 'https://images.unsplash.com/photo-1558980394-0d9fd03b1f1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('v-strom-650'),
   },
 ];
 
@@ -282,7 +372,8 @@ const Inventory = () => {
               }
             }}
           >
-            <div className="moto-image" style={{ backgroundImage: `url(${bike.image})` }}>
+            <div className="moto-image">
+              <img src={bike.image} alt={bike.name} className="moto-image-img" />
               <span className={`tag ${bike.status}`}>
                 {bike.status === 'new' ? 'Nova' : 'Usada'}
               </span>
@@ -339,8 +430,9 @@ const Inventory = () => {
                   <div
                     key={`${selectedBike.name}-${index}`}
                     className="modal-thumb"
-                    style={{ backgroundImage: `url(${photo})` }}
-                  />
+                  >
+                    <img src={photo} alt={`${selectedBike.name} ${index + 1}`} className="modal-thumb-img" />
+                  </div>
                 ))}
               </div>
             </motion.div>

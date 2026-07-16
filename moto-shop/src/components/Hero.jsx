@@ -17,7 +17,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        CANCELA O <span>UBER!!!</span>
+        StartCria <span>021</span>
       </motion.h1>
       
       <motion.p
@@ -25,7 +25,7 @@ const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
-        Veem que vem, só na DuMotors tem!
+        Vamos construir juntos o seu sonho de ter uma moto, com as melhores condições do mercado e um atendimento que faz você se sentir em casa.
       </motion.p>
       
       <motion.a 

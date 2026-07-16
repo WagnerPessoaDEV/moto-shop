@@ -13,16 +13,14 @@ const AboutSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="about-eyebrow">Nossa historia</p>
+          <p className="about-eyebrow">Nossa história</p>
           <h2>Mais de 15 anos conectando voce a sua proxima moto</h2>
           <p>
-            Vindos de uma família humilde, construímos nossa história com muito trabalho, fé e perseverança. Tudo começou de forma simples, com pequenos trabalhos e muita vontade de vencer. Ao longo da caminhada, enfrentamos desafios, aproveitamos oportunidades e aprendemos o valor da luta diária.
+            A StartCria021 é uma empresa de tecnologia e design especializada em transformar ideias em soluções digitais modernas e eficientes. Atuamos no desenvolvimento de sites, sistemas web, landing pages, identidade visual, manutenção de computadores, instalação de redes e criação de conteúdo para redes sociais.
 
-Com dedicação, parceria e visão empreendedora, transformamos esforço em crescimento. Foi assim que nasceu a DUMOTORS, em 2015, fruto de um sonho construído com coragem, responsabilidade e amor pela família.
+Nosso objetivo é ajudar empresas e empreendedores a fortalecerem sua presença digital através da tecnologia, criatividade e inovação, oferecendo soluções personalizadas que impulsionam resultados e conectam marcas ao seu público de forma estratégica.
 
-Nossa trajetória passou pelas motos, reformas, vendas, locações e, depois, pelos carros — sempre sem esquecer nossa essência e nossas raízes. Mais do que uma empresa, a DUMOTORS representa superação, gratidão a Deus e a certeza de que é possível começar com pouco e conquistar muito.
-
-Trabalho, fé, família e determinação são os pilares da nossa história.
+Na StartCria021, acreditamos que cada projeto é único e merece uma combinação de design, tecnologia e atenção aos detalhes para gerar impacto real e crescimento sustentável.
           </p>
           <div className="about-highlights">
             <div>
@@ -46,7 +44,7 @@ Trabalho, fé, família e determinação são os pilares da nossa história.
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <h3>Por que escolher a DuMotors?</h3>
+          <h3>Por que escolher a StartCria021?</h3>
           <ul>
             <li>Inspeção completa e revisao antes da entrega.</li>
             <li>Equipe especializada em financiamento e consorcio.</li>
