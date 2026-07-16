@@ -27,7 +27,7 @@ const Navbar = ({ theme, onToggleTheme }) => {
       <div className="logo">
         <img src={logo} alt="DuMotors" className="logo-image" />
         <span className="logo-text">
-          Du<span>Motors</span>
+          <span></span>
         </span>
       </div>
       <ul className="nav-links">
