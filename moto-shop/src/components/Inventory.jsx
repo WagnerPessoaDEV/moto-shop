@@ -1,5 +1,5 @@
 // src/components/Inventory.jsx
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import xmax2024Image from '../assets/estoque/xmax-2024.jpg';
 import xmax2024Image1 from '../assets/estoque/xmax-2024 (1).jpg';
@@ -177,66 +177,6 @@ const newBikes = [
     image: r15Image1,
     gallery: r15Gallery,
   },
-  {
-    id: 5,
-    name: 'Honda CB 650R',
-    year: 2024,
-    price: 'R$ 49.900',
-    km: '0 km',
-    status: 'new',
-    image: 'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('cb-650r'),
-  },
-  {
-    id: 6,
-    name: 'Kawasaki Z400',
-    year: 2024,
-    price: 'R$ 33.900',
-    km: '0 km',
-    status: 'new',
-    image: 'https://images.unsplash.com/photo-1472417583565-62e7bdeda490?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('z400'),
-  },
-  {
-    id: 7,
-    name: 'BMW G 310 R',
-    year: 2024,
-    price: 'R$ 32.900',
-    km: '0 km',
-    status: 'new',
-    image: 'https://images.unsplash.com/photo-1505843513577-22bb7d21e455?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('g-310-r'),
-  },
-  {
-    id: 8,
-    name: 'Triumph Trident 660',
-    year: 2024,
-    price: 'R$ 45.900',
-    km: '0 km',
-    status: 'new',
-    image: 'https://images.unsplash.com/photo-1517673132405-a56a62b18caf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('trident-660'),
-  },
-  {
-    id: 9,
-    name: 'Ducati Scrambler Icon',
-    year: 2024,
-    price: 'R$ 59.900',
-    km: '0 km',
-    status: 'new',
-    image: 'https://images.unsplash.com/photo-1508973378896-7c9de50d8f4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('scrambler-icon'),
-  },
-  {
-    id: 10,
-    name: 'Suzuki GSX-S750',
-    year: 2024,
-    price: 'R$ 54.900',
-    km: '0 km',
-    status: 'new',
-    image: 'https://images.unsplash.com/photo-1558980394-0d9fd03b1f1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('gsx-s750'),
-  },
 ];
 //motos usadas
 const usedBikes = [
@@ -315,6 +255,22 @@ const usedBikes = [
 const Inventory = () => {
   const [filter, setFilter] = useState('new');
   const [selectedBike, setSelectedBike] = useState(null);
+  const [selectedPhoto, setSelectedPhoto] = useState(null);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setSelectedPhoto(null);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   const bikesByStatus = {
     new: newBikes,
     used: usedBikes,
@@ -417,14 +373,48 @@ const Inventory = () => {
               </div>
               <div className="modal-grid">
                 {selectedBike.gallery.map((photo, index) => (
-                  <div
+                  <button
                     key={`${selectedBike.name}-${index}`}
                     className="modal-thumb"
+                    type="button"
+                    onClick={() => setSelectedPhoto(photo)}
+                    aria-label={`Abrir ${selectedBike.name} ${index + 1} em tamanho maior`}
                   >
                     <img src={photo} alt={`${selectedBike.name} ${index + 1}`} className="modal-thumb-img" />
-                  </div>
+                  </button>
                 ))}
               </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {selectedPhoto && (
+          <motion.div
+            className="photo-lightbox"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedPhoto(null)}
+          >
+            <motion.div
+              className="photo-lightbox-panel"
+              initial={{ scale: 0.96, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.96, opacity: 0 }}
+              transition={{ duration: 0.18 }}
+              onClick={(event) => event.stopPropagation()}
+            >
+              <button
+                type="button"
+                className="photo-lightbox-close"
+                onClick={() => setSelectedPhoto(null)}
+                aria-label="Fechar imagem ampliada"
+              >
+                Fechar
+              </button>
+              <img src={selectedPhoto} alt="Imagem ampliada do estoque" className="photo-lightbox-img" />
             </motion.div>
           </motion.div>
         )}
