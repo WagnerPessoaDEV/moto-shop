@@ -310,16 +310,6 @@ const usedBikes = [
     image: bmwF750Image1,
     gallery: bmwF750Gallery,
   },
-  {
-    id: 8,
-    name: 'Triumph Bonneville T100',
-    year: 2017,
-    price: 'R$ 41.900',
-    km: '35.000 km',
-    status: 'used',
-    image: 'https://images.unsplash.com/photo-1517673132405-a56a62b18caf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    gallery: buildGallery('bonneville-t100'),
-  },
 ];
 
 const Inventory = () => {
