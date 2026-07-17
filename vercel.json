@@ -1,0 +1,5 @@
+{
+  "installCommand": "cd moto-shop && npm install",
+  "buildCommand": "cd moto-shop && npm run build",
+  "outputDirectory": "moto-shop/build"
+}
