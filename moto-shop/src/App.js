@@ -47,7 +47,7 @@ function App() {
             <div className="contact-list">
               <a
                 className="contact-item"
-                href="https://wa.me/5521990018557"
+                href="https://wa.me/5521973373098"
                 target="_blank"
                 rel="noreferrer"
               >
