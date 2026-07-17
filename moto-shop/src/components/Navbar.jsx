@@ -25,7 +25,7 @@ const Navbar = ({ theme, onToggleTheme }) => {
       transition={{ duration: 0.5 }}
     >
       <div className="logo">
-        <img src={logo} alt="DuMotors" className="logo-image" />
+        <img src={logo} alt="StartCra021" className="logo-image" />
         <span className="logo-text">
           <span></span>
         </span>
